@@ -1,0 +1,36 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/rcppap.png" alt="RCP logo" />
+    <h2>Restrict Content Pro integration configuration</h2>
+    Configure what should be tracked from Restrict Content Pro plugin.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Track registrations</td>
+              <td>{rcppap-track-registration}</td>
+              <td class="greyNote">registrations will be tracked if this option is enabled</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Registration action name</td>
+              <td>{rcppap-registration-action-name}</td>
+              <td class="greyNote">when tracking registrations you can track it as a custom action - set its name here</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Track payments</td>
+              <td>{rcppap-track-payments}</td>
+              <td class="greyNote">payments for registrations (and recurring payments as well) will be tracked if this option is enabled</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Automatic commission status change</td>
+              <td>{rcppap-update-comm-status}</td>
+              <td class="greyNote">should a commission status change when order status is changed?</td>
+          </tr>
+        </table>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

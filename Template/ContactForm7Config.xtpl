@@ -1,0 +1,79 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/cf7.png" alt="Contact Form 7 logo" />
+    <h2>Contact form 7 contact commission options</h2>
+    Here you can setup commission which will be registered in Post Affiliate Pro after someone fills contact form and send it  
+        {form.head}
+        {settings}
+        <table class="form-table">
+            {contact7-signup-note}
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Form</th>
+                <td>{contact7-contact-commission-form}</td>
+                <td class="greyNote">One of Contact form 7 forms collection</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Custom commission amount</th>
+                <td>{contact7-contact-commission-amount}</td>
+                <td class="greyNote">Amount of commission for this lead/action</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Campaign</th>
+                <td>{contact7-contact-commission-campaign}</td>
+                <td class="greyNote">Register commission to specified campaign</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Track each form as a separate action</th>
+                <td>{contact7-contact-separate-actions}</td>
+                <td class="greyNote">When enabled each form will be tracked as an action, form ID will be used for action code.</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Action commission code</th>
+                <td>{contact7-contact-commission-type}</td>
+                <td class="greyNote">If you want to track an action commission instead of 'per sale' type, add your action commission 'code' here. Use this option with a campaign specified in the above setting. Leave empty if you prefer 'per sale'</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Store form</th>
+                <td>{contact7-contact-commission-store-form}</td>
+                <td class="greyNote">Store form data in data1 field with transaction (format field1_name: value1, field2_name: value2, ...)</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Email as order ID</th>
+                <td>{contact7-contact-email-as-orderid}</td>
+                <td class="greyNote">This will try to find an email address of submission sender and set it as order ID</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Product ID</th>
+                <td>{contact7-prodid}</td>
+                <td class="greyNote">Insert the "Name" of the form's field whose value you'd like to save as product ID. When left empty the form's title will be used.</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Data 2</th>
+                <td>{contact7-data2}</td>
+                <td class="greyNote">Insert the "Name" of the form's field whose value you'd like to save to this commission field.</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Data 3</th>
+                <td>{contact7-data3}</td>
+                <td class="greyNote">Insert the "Name" of the form's field whose value you'd like to save to this commission field.</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Data 4</th>
+                <td>{contact7-data4}</td>
+                <td class="greyNote">Insert the "Name" of the form's field whose value you'd like to save to this commission field.</td>
+            </tr>
+            <tr valign="top">
+                <th colspan="2" scope="row" class="heading">Data 5</th>
+                <td>{contact7-data5}</td>
+                <td class="greyNote">Insert the "Name" of the form's field whose value you'd like to save to this commission field.</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="formBottomNote">See <a href='http://contactform7.com/'>Contact form 7 web</a> for more info</td>
+            </tr>
+        </table>
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

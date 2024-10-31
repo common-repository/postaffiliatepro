@@ -1,0 +1,87 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <h2>Additional options</h2>
+    <div>This section is to infom you about more options that this plugin offers you</div>
+
+    <h3>Shortcodes</h3>
+    <div>
+        What is a shortcode? The Shortcode is a simple functions for use in posts and pages. The Post Affiliate Pro plugin uses it for easy and quick access to affiliate details. If the logged user is also an affiliate (there is a match between WP nice_name and affiliate referral ID, or a match by email) you can show them some info, e.g. their affilite link, so they do not have to login to their affiliate panel. Or let them easily login without the need to enter their credentials once again.
+        <br /> The shortcode, from the point of view, is just a short text that you add to a place in post or page where you want the specific data to be diplayed.
+        <br />
+        <br /> Here are some examples of use:
+        <br />
+        <strong>[affiliate item="name"]</strong> - prints name of currently loaded affiliate.
+        <br />
+        <strong>[affiliate item="loginurl"]</strong> - prints link "Affiliate panel" that affiliate can use to login to his panel
+        <br />
+        <strong>[affiliate item="loginurl" caption="Log me in!"]</strong> - prints link "Log me in!" that affiliate can use to login to his panel
+        <br />
+        <strong>[affiliate item="loginurl_raw"]</strong> - prints raw url link: http://www.yoursite.com/affiliate/affiliates/panel.php?S=sessionid
+        <br />
+        <strong>[affiliate item="<i>OTHER_ATTRIBUTES</i>"]</strong> - prints other affiliate attributes.
+        <br />
+        <br />
+        <i>OTHER_ATTRIBUTES</i> can be one of these items:
+        <ul>
+            <li><strong>userid</strong> - ID of user</li>
+            <li><strong>refid</strong> - user referral ID</li>
+            <li><strong>rstatus</strong> - user status</li>
+            <li><strong>minimumpayout</strong> - amount of the minimum payout for user</li>
+            <li><strong>payoutoptionid</strong> - ID of the payout option used by user</li>
+            <li><strong>note</strong> - user note</li>
+            <li><strong>photo</strong> - URL of user image</li>
+            <li><strong>username</strong> - username</li>
+            <li><strong>rpassword</strong> - user password</li>
+            <li><strong>firstname</strong> - user first name</li>
+            <li><strong>lastname</strong> - user last name</li>
+            <li><strong>parentuserid</strong> - ID of parent user</li>
+            <li><strong>ip</strong> - user signup IP address</li>
+            <li><strong>notificationemail</strong> - user notification email</li>
+            <li><strong>data1</strong> to <strong>data25</strong> - user data fields</li>
+        </ul>
+        <br /> Example of getting user notification email:
+        <br /> [affiliate item="notificationemail"]
+        <br />
+        <br /> You can get the same values of affiliate parent, instead of 'affiliate' shortcode use 'parent' and then the needed item. E.g. for parent name use this: [parent item="name"/]
+        <br />
+        <br />
+        It is also possible to get <strong>affiliate's unpaid commissions</strong> (balance). To do this use this shortcode:
+        <br />
+        <strong>[affiliate item="unpaidCommissions"]</strong> - prints value of all unpaid commissions
+        <br />
+        <br />
+        You can also get commissions of a specified time period. To do so use the 'timeframe' attribute. Here are the available values:
+        <ul>
+            <li>timeframe=<strong>"yesterday"</strong> - for commissions of yesterday</li>
+            <li>timeframe=<strong>"week"</strong> - for last week</li>
+            <li>timeframe=<strong>"month"</strong> - for last month</li>
+            <li>timeframe=<strong>"30"</strong> - for last 30 days</li>
+            <li>timeframe=<strong>"year"</strong> - for this year</li>
+            <li>timeframe=<strong>"lastyear"</strong> - for last year</li>
+        </ul>
+        <br />Example of getting affiliate's commission balance of last week:
+        <br />[affiliate item="unpaidCommissions" timeframe="week"]
+    </div>
+
+    <h3>Widgets</h3>
+    <div>
+        As a widget, you can use Top Affiliates widget created by this plugin. The widget works for all site visitors, not only to the logged ones. With the Top Affiliates widget you can show the best performing affiliates and their details.
+        <br /> If you want to set it up navigate to <strong>Appearance> Widgets</strong> section and add the <strong>Top Affiliates</strong> widget. When added, you can configure the number of affiliates who should be included in the result, set a value to be used for ordering and you can also define the template of the result.
+        <br /> You can use these variables:
+        <br />
+        <strong>{$firstname}</strong>
+        <br />
+        <strong>{$lastname}</strong>
+        <br />
+        <strong>{$userid}</strong>
+        <br />
+        <strong>{$parentuserid}</strong>
+        <br />
+        <strong>{$clicksAll}</strong>
+        <br />
+        <strong>{$salesCount}</strong>
+        <br />
+        <strong>{$commissions}</strong>
+    </div>
+</div>
+<!-- END: main -->

@@ -1,0 +1,7 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/paypal.png" alt="PayPal Buy Now Button logo" />
+    <h2>PayPal Buy Now Button integration configuration</h2>
+    <p>PayPal buttons generated through the PayPal Buy Now Button plugin are integrated now.<br />Do NOT forget to activate the PayPal IPN handling plugin in your merchant panel of Post Affiliate Pro !</p>
+</div>
+<!-- END: main -->

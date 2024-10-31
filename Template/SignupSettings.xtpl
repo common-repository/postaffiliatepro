@@ -1,0 +1,59 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <h2>Signup options</h2>
+    These options will apply when a new affiliate is automatically created with Post Affiliate Pro
+        {form.head}
+        {settings}
+        <table class="form-table">
+            <tr valign="top">
+                <td scope="row" class="heading">Signup integration enabled</td>
+                <td>{pap-sugnup-integration-enabled}</td>
+                <td class="greyNote">
+                    Check this box if you would like to automatically create a new affiliate when a user is created within your Wordpress.<br />
+                    Make sure signup fields in your Post Affiliate Pro are set as <strong>optional</strong> as some data might not be sent over from WordPress.
+                </td>
+            </tr>
+
+            <tr valign="top">
+                <td scope="row" class="heading">Affiliate username</td>
+                <td>{pap-sugnup-affiliate-username}</td>
+                <td class="greyNote">Choose whether affiliate accounts should be created with email as usernamne or with affiliate username the same as WP username. This works with the option 'do not force email usernames' in your merchant panel</td>
+            </tr>
+            
+            <tr valign="top">
+                <td scope="row" class="heading">Default Parent Affiliate</td>
+                <td>{pap-sugnup-default-parent}</td>
+                <td class="greyNote">New PAP affiliate accounts created through your Wordpress will be assigned to the parent affiliate selected above.</td>
+            </tr>
+
+            <tr valign="top">
+                <td scope="row" class="heading">Default signup status</td>
+                <td>{pap-sugnup-default-status}</td>
+                <td class="greyNote">The status of new affiliates created in Post Affiliate Pro through Wordpress will reflect the above setting. If set "default", Post Affiliate Pro will handle the status by its predefined settings.</td>
+            </tr>
+
+            <tr valign="top">
+                <td scope="row" class="heading">Use also WordPress photo for the new affiliate</td>
+                <td>{pap-sugnup-use-photo}</td>
+                <td class="greyNote">When checked, the WordPress photo will be set as new affiliate's photo (useful in case your WP form allows a photo upload).</td>
+            </tr>
+
+            <tr valign="top">
+                <td scope="row" class="heading">Set WP user level to the new affiliate</td>
+                <td>{pap-sugnup-save-level}</td>
+                <td class="greyNote">Make sure the selected data is enabled in your merchant panel, in Configuration> Affiliate Signup> Fields</td>
+            </tr>
+        </table>
+
+        <!-- BEGIN: campaigns -->
+        <hr>
+        <h2>Campaign info</h2>
+        {campaigns-content}
+        <!-- END: campaigns -->
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

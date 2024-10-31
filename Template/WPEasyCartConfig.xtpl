@@ -1,0 +1,21 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/wpec.png" alt="WP EasyCart logo" />
+    <h2>WP EasyCart integration configuration</h2>
+    You can enable or disable tracking of customer email into data1 field.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Track email to Data 1</td>
+              <td>{wpec-data1}</td>
+              <td class="greyNote"></td>
+          </tr>
+        </table>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

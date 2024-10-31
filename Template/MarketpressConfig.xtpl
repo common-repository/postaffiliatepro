@@ -1,0 +1,31 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/marketpress.png" alt="Marketpress logo" />
+    <h2>Marketpress integration configuration</h2>
+    Configure what should be tracked from Marketpress plugin.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Per product tracking</td>
+              <td>{marketpress-per-product}</td>
+              <td class="greyNote">when selected, a commissions will be created for each product of customer's order</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Track email in Data 1</td>
+              <td>{marketpress-track-data1}</td>
+              <td class="greyNote">email address will be tracked in Data1, usually used for Lifetime Commissions</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Automatic commission status change</td>
+              <td>{marketpress-status-update}</td>
+              <td class="greyNote">should a commission status change when order status is changed?</td>
+          </tr>
+        </table>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

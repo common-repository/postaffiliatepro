@@ -1,0 +1,18 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/stripepay.png" alt="Stripe Payments plugin logo" />
+    <h2>Stripe Payments integration configuration</h2>
+    <h4>This integration does NOT integrate Stripe in general. It integrates products created using the Stripe Payments plugin. If you do not use this plugin this integration will not do anything.</h4>
+    <table class="form-table">
+        <tr valign="top">
+            <td scope="row">Post Affiliate Pro tracking cookie is now send to Stripe customer's description field when there is a payment done via the products / shortcodes added by the Stripe Payments plugin. However to finish the integration <strong>2 additional steps are required</strong>:</td>
+        </tr>
+        <tr valign="top">
+            <td scope="row"><strong>1.</strong> Set up a webhook in Stripe as instructed in your Post Affiliate Pro merchant panel under Tools->Integration->Sales/Leads Tracking->Stripe.</td>
+        </tr>
+        <tr valign="top">
+            <td scope="row"><strong>2.</strong> Activate and configure the Stripe webhook handling plugin in your Post Affiliate Pro merchant panel under Configuration->Plugins. Make sure you check the checkbox in the plugin configuration to "Track 'Charge' event"</td>
+        </tr>
+    </table>
+</div>
+<!-- END: main -->

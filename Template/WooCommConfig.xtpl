@@ -1,0 +1,99 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/woo.png" alt="WooCommerce logo" />
+    <h2>WooCommerce integration configuration</h2>
+    Configure what should be tracked from WooCommerce plugin.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">For Order ID use</td>
+              <td>{woocomm-orderid}</td>
+              <td class="greyNote"><span class="alert">If you change this setting once you have already started tracking the already tracked commissions will not be affected by Automatic commission status change, new ones will.</span><br />Order ID is the internal system ID (post ID) of the WooCommerce order, this is the default option.<br />Order number should be used mainly if you plan on using multiple WooCommerce instances with the same Post Affiliate Pro account, this will set the commission's order ID to the customized order number provided by plugins like Sequential Order Number for WooCommerce.</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Per product tracking</td>
+              <td>{woocomm-per-product}</td>
+              <td class="greyNote">when selected, a commissions will be created for each product of customer's order</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Product info</td>
+              <td>{woocomm-product-id}</td>
+              <td class="greyNote">choose which value will be used for product tracking (note your products should only have one category at a time if you want to track product category)</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Force campaign</td>
+              <td>{woocomm-campaign}</td>
+              <td class="greyNote">you can specify a campaign which will be used for all orders instead of automatic campaign recognition (by cookie, product ID, ...)</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 1</td>
+              <td>{woocomm-data1}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 2</td>
+              <td>{woocomm-data2}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 3</td>
+              <td>{woocomm-data3}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 4</td>
+              <td>{woocomm-data4}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 5</td>
+              <td>{woocomm-data5}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Track recurring transaction total cost</td>
+              <td>{woocomm-track-recurring-total}</td>
+              <td class="greyNote">When this is checked, each recurring commission will be created based on the total cost of recurring sale.</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Deduct fees from total cost</td>
+              <td>{woocomm-deduct-fees}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Automatic commission status change</td>
+              <td>{woocomm-status-update}</td>
+              <td class="greyNote">should a commission status change when order status is changed?</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Affiliate approval on specific product</td>
+              <td>{woocomm-affiliate-approval}</td>
+              <td class="greyNote">when the product (based on 'Product info' above) is ordered, approve the affiliate recognized by customer email. Multiple products can be <strong>separated by semicolon</strong></td>
+          </tr>
+
+          <!-- tr>
+              <td colspan="3" class="formBottomNote"></td>
+          </tr -->
+        </table>
+
+        <div id='orderIdWarning' class='alertBox' style='display:none'>Changing the Order ID setting will cause the already tracked commissions to not be updated anymore by the Automatic commission status change functionality. Newly tracked commissions will be updated as normal.</div>
+        <script type="text/javascript">
+            if ('{currentStatusUpdateSetting}' === 'true' && '{currentOrderIdSetting}' !== '') {
+                let orderIdSetting = document.getElementById('woocomm-orderid');
+                orderIdSetting.onchange = function () {
+                    if(orderIdSetting.value !== '{currentOrderIdSetting}') {
+                        document.getElementById('orderIdWarning').style.display = 'inline-block';
+                    } else {
+                        document.getElementById('orderIdWarning').style.display = 'none';
+                    }
+                }
+            }
+        </script>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

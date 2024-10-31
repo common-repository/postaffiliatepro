@@ -1,0 +1,26 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/wlm.png" alt="ishList Member logo" />
+    <h2>WishList Member integration configuration</h2>
+    Configure what should be tracked from WishList Member plugin. <u>Sales are tracked automatically</u> when this integration is enabled.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Registration action tracking</td>
+              <td>{wlm-track-registration}</td>
+              <td class="greyNote">if you want to track a special action commission for registration, add the action 'code' here</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Track recurring commissions</td>
+              <td>{wlm-track-recurring}</td>
+              <td class="greyNote">when checked, it will track a recurring commission automatically (works only with: 1ShoppingCart, ClickBank, Infusionsoft, JVZoo, PayPal, Premium Web Cart, Stripe, 2Checkout)</td>
+          </tr>
+        </table>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

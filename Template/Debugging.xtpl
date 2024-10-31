@@ -1,0 +1,26 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <h2>Debugging</h2>
+    When you feel like something does not work or you simply want to take a look "under the hood" feel free to use this tool.<br /><br />
+    <strong>NOTE</strong> the log file may expose some private information so the plugin makes sure it is not accessible from web. However, to protect your data the debug file will be deleted as soon as you disable debugging.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Enable/Disable</td>
+              <td>{debugging-enabled}</td>
+              <td class="greyNote">when selected, the plugin will try to enable logging into a custom file</td>
+          </tr>
+
+          <tr>
+              <td colspan="3" class="formBottomNote">If the debug file exists you will be able to see it here and browse logs.</td>
+          </tr>
+        </table>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+        {debug_info}
+</div>
+<!-- END: main -->

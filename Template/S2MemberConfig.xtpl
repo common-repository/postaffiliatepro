@@ -1,0 +1,30 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/s2member.png" alt="s2Member logo" />
+    <h2>s2Member integration configuration</h2>
+    Configure what should be tracked from s2Member plugin.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Track recurring payments</td>
+              <td>{s2member-track-recurring}</td>
+              <td class="greyNote">recurring payments will be tracked if this option is enabled</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Force campaign</td>
+              <td>{s2member-campaign}</td>
+              <td class="greyNote">you can specify a campaign which will be used for all orders instead of automatic campaign recognition (by cookie, product ID, ...)</td>
+          </tr>
+          
+          <tr>
+              <td colspan="3" class="formBottomNote">To track PayPal orders correctly, you have to disable button encryption in s2Member> PayPal Options</td>
+          </tr>
+        </table>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

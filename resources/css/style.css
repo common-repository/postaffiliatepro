@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.postaffiliatepro .formBottomNote {padding-top:0px; padding-bottom:15px}
+.postaffiliatepro .greyNote {color:#999999; font-size: smaller !important}
+.postaffiliatepro td.label {width:400px}
+.postaffiliatepro .heading {width: 400px; vertical-align: middle; font-weight: 600}
+.postaffiliatepro .alert {color:#ff0f0f;}
+.postaffiliatepro .alertBox {padding: 20px; background-color: #f44336; color: white; margin-top: 15px;}
+.postaffiliatepro h2 {align-items: center; height: 128px; font-size: 2em; margin: 1ex; display: flex}
+
+/*FORMS*/
+.postaffiliatepro .text {border: 2px solid #666666; background-color: #FFFFCC}
+.postaffiliatepro .text-focus {border: 2px solid #666666; background-color: #ccccff}
+.postaffiliatepro .integrationsTile {text-align: center;display: block;float: left;margin: 0 4em 3em 0}
+.postaffiliatepro .integrationsTitle {font-weight: bold;line-height: 2.5em}
+.postaffiliatepro .greyedOut {opacity: 0.2;filter: alpha(opacity=20);/*msie*/}
+.postaffiliatepro .integrationsTitleImage {width:128px;height:128px;display: block;float: left;margin: 0 2em 2em 0}
+
+.postaffiliatepro #generalInfoContent {display: block;float: left;margin: 2em 0 3em}
+.postaffiliatepro #generalInfoContent .column {width: 30%;display: block;float: left;padding-left: 1em}
+.postaffiliatepro #generalInfoContent .column h3 {margin-top: 0px}
+
+/* Side Widget */
+#wc-pap-recompute-commissions h2.ui-sortable-handle {background: url(../img/menu-icon.png) no-repeat 6px; padding-left: 2em}
+#poststuff #wc-pap-recompute-commissions .inside {margin: 0; padding: 0 12px; text-align: right}
+#papRecomputionContent {padding: 12px}
+#papRecomputionText {text-align: left; color: #999; font-size: smaller; font-style: italic; padding-bottom: 1em}
+#papRecomputionNote {text-align: left; display: none; background: #ffdddd; border: dotted 1px #ffcccc; border-radius: 2px; padding: 1ex 1em; margin-bottom: 12px}
+
+/* Ask for a review */
+.pap-review-notice-wrapper {font-family: "Poppins", sans-serif;border: 0;padding: 1% 20%;position: relative;}
+.pap-review-notice {background-color: white;position: relative;margin: 5px 0 15px;padding: 1px 38px 1px 12px;border: 0;border-radius: 16px;box-shadow: 0 0 5px rgba(0,0,0,.1);}
+.pap-review-notice::before {background-image: url(../img/box-bg-default.svg);background-position: left -80px;top: 0;right: 0;bottom: 0;left: 0;position: absolute;content: "";z-index: 1;background-repeat: no-repeat;background-size: 38% auto;}
+.reviewButton {display: inline-block;background-color: #118af7;padding: 1ex 1em;border-radius: 2em;margin: 1em auto;width: 14em;}
+.reviewButton a {color: white;text-decoration: none;}
+.pap-review-text {padding-top: 1em;position: relative;text-align: center;z-index: 2;}
+.pap-review-text p {font-size: 15px;}
+.pap-review-text h2 {font-size: 22px;font-weight: 500;}
+.pap-review-help {text-align: right;display: block;padding: 3em 0 1ex;}
+.pap-review-notice .dashicons {text-decoration: none;padding-right: 5px;}
+span.highlight {background-color: white;color:#118af7}

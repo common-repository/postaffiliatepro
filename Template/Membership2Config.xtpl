@@ -1,0 +1,21 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/ms2pro.png" alt="Membership 2 Pro logo" />
+    <h2>Membership 2 Pro integration configuration</h2>
+    Configure what should be tracked from Membership 2 Pro plugin.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Automatic refund tracking</td>
+              <td>{membership2-track-refunds}</td>
+              <td class="greyNote">should a commission be refunded when order is refunded?</td>
+          </tr>
+        </table>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

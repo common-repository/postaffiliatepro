@@ -1,0 +1,21 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/pmpro.png" alt="Post Membership Pro" />
+    <h2>Post Membership Pro integration configuration</h2>
+    Here you can configure some options for integration with Post Membership Pro plugin.
+    {form.head}
+    {settings}
+    <table class="form-table">
+      <tr valign="top">
+          <td scope="row" class="heading">For Product ID use</td>
+          <td>{pmpro-prodid}</td>
+          <td class="greyNote"></td>
+      </tr>
+    </table>
+
+    <p class="submit">
+        {submit}
+    </p>
+    {form.tail}
+</div>
+<!-- END: main -->

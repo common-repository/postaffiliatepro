@@ -1,0 +1,48 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <h2>Post Affiliate Pro general options</h2>
+        {initial_info}
+        {form.head}
+		{settings}
+        <table class="form-table">
+            <tr valign="top">
+                <td scope="row" class="heading">Post Affiliate Pro URL</td>
+                <td>{pap-url}</td>
+                <td class="greyNote">Example: http://www.yoursite.com/affiliate/ or http://youraccount.postaffiliatepro.com/</td>
+            </tr>
+
+            <tr valign="top">
+                <td scope="row" class="heading">Merchant username</td>
+                <td>{pap-merchant-name}</td>
+                <td></td>
+            </tr>
+
+            <tr valign="top">
+                <td scope="row" class="heading">Merchant password</td>
+                <td>{pap-merchant-password}</td>
+                <td></td>
+            </tr>
+
+            <tr valign="top">
+                <td scope="row" class="heading">Account ID</td>
+                <td>{pap-click-tracking-account}</td>
+                <td class="greyNote">ID of your Post Affiliate Network merchant account. ('default1' is used for Post Affiliate Pro)</td>
+            </tr>
+            
+            <tr valign="top">
+                <td scope="row" class="heading">Use asynchronous tracking where possible</td>
+                <td>{async-enabled}</td>
+                <td class="greyNote"></td>
+            </tr>
+        </table>
+        
+        {login_check_ok}
+        {installation_info}
+        {error}
+        {notice}
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

@@ -1,0 +1,26 @@
+<!-- BEGIN: main -->
+<table class="form-table">
+    <tr>
+        <td style="padding-top:0px;padding-bottom:15px;font-size:15px;">
+            Total campaigns count: {campaigns-count}
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-top:0px;padding-bottom:15px;font-size:15px;">
+            Public campaigns: {public-campaigns-count}
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-top:0px;padding-bottom:15px;font-size:15px;">
+            Public campaigns with manual approval: {public-campaigns-manual-count}
+        </td>
+    </tr>
+    <tr>
+        <td style="padding-top:0px;padding-bottom:15px;font-size:15px;">
+            Private campaigns: {private-campaigns-count}
+        </td>
+    </tr>
+</table>
+<hr>
+{campaigns-list}
+<!-- END: main -->

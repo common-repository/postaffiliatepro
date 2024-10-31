@@ -1,0 +1,63 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/spp.png" alt="Simple Pay Pro logo" />
+    <h2>WP Simple Pay Pro integration configuration</h2>
+        In case of <strong>recurring commissions</strong> the tracking is done by Stripe plugin in your merchant panel.
+    Make sure to enable the plugin and also to set this webhook in your Stripe admin:<br />
+            <pre>{papURL}</pre>
+        
+        {form.head}
+        {settings}    
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Track recurring commissions</td>
+              <td>{simplepaypro-track-recurring}</td>
+              <td class="greyNote"></td>
+          </tr>
+          </table>
+          
+          <table id="form-table2" class="form-table">
+          <tr>
+              <td colspan="3">
+              Setup campaign and extra data values in case you do not want to track recurring commissions.
+            </td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Force campaign</td>
+              <td>{simplepaypro-campaign}</td>
+              <td class="greyNote">you can specify a campaign which will be used for all orders instead of automatic campaign recognition (by cookie, product ID, ...)</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 1</td>
+              <td>{simplepaypro-data1}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 2</td>
+              <td>{simplepaypro-data2}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 3</td>
+              <td>{simplepaypro-data3}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 4</td>
+              <td>{simplepaypro-data4}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 5</td>
+              <td>{simplepaypro-data5}</td>
+              <td class="greyNote"></td>
+          </tr>
+        </table>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+        {hider}
+</div>
+<!-- END: main -->

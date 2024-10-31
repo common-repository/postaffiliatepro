@@ -1,0 +1,20 @@
+<!-- BEGIN: main -->
+<table class="form-table">
+    <tr>
+        <td style="padding-top:0px;padding-bottom:15px;" width="40%">
+            Campaign name: {campaign-name} (id: {campaign-id})
+        </td>
+        <td style="padding-top:0px;padding-bottom:15px;">
+            Type: {campaign-type}
+        </td>
+    </tr>
+    <tr>
+        <td colspan = "2">
+            Nothing to do here. The campaign is public.
+        </td>
+    </tr>
+</table>
+<hr>
+<table class="form-table">
+</table>
+<!-- END: main -->

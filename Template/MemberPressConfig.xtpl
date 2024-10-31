@@ -1,0 +1,51 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/memberpress.png" alt="MemberPress logo" />
+    <h2>MemberPress integration configuration</h2>
+    Configure what should be tracked from MemberPress plugin.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Track recurring commissions</td>
+              <td>{memberpress-track-refurring}</td>
+              <td class="greyNote">if you want to pay only one commission for a recurring payment (subscription), this has to be disabled</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Track recurring transaction total cost</td>
+              <td>{memberpress-track-recurring-total}</td>
+              <td class="greyNote">When this is checked, each recurring commission will be created based on the total cost of recurring sale</td>
+          </tr>
+          <tr valign="top">
+            <td scope="row" class="heading">Data 1</td>
+            <td>{memberpress-data1}</td>
+            <td class="greyNote">What should save into commission's Extra data 1 field.</td>
+        </tr>
+        <tr valign="top">
+            <td scope="row" class="heading">Data 2</td>
+            <td>{memberpress-data2}</td>
+            <td class="greyNote">What should save into commission's Extra data 2 field.</td>
+        </tr>
+        <tr valign="top">
+            <td scope="row" class="heading">Data 3</td>
+            <td>{memberpress-data3}</td>
+            <td class="greyNote">What should save into commission's Extra data 3 field.</td>
+        </tr>
+        <tr valign="top">
+            <td scope="row" class="heading">Data 4</td>
+            <td>{memberpress-data4}</td>
+            <td class="greyNote">What should save into commission's Extra data 4 field.</td>
+        </tr>
+        <tr valign="top">
+            <td scope="row" class="heading">Data 5</td>
+            <td>{memberpress-data5}</td>
+            <td class="greyNote">What should save into commission's Extra data 5 field.</td>
+        </tr>
+        </table>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

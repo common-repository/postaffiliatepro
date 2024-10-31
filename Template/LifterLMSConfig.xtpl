@@ -1,0 +1,54 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/lifterlms.png" alt="LifterLMS logo" />
+    <h2>LifterLMS integration configuration</h2>
+    Configure how the LifterLMS transactions should be tracked.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Product info</td>
+              <td>{lifterlms-product-id}</td>
+              <td class="greyNote">choose which value will be used for product ID tracking</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Force campaign</td>
+              <td>{lifterlms-campaign}</td>
+              <td class="greyNote">you can specify a campaign which will be used for all orders instead of automatic campaign recognition (by cookie, product ID, ...)</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 1</td>
+              <td>{lifterlms-data1}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 2</td>
+              <td>{lifterlms-data2}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 3</td>
+              <td>{lifterlms-data3}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 4</td>
+              <td>{lifterlms-data4}</td>
+              <td class="greyNote"></td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 5</td>
+              <td>{lifterlms-data5}</td>
+              <td class="greyNote"></td>
+          </tr>
+
+          <!-- tr>
+              <td colspan="3" class="formBottomNote"></td>
+          </tr -->
+        </table>
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

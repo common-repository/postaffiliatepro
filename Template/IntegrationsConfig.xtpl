@@ -1,0 +1,111 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <h2>General integration settings with Post Affiliate Pro</h2>
+    Currently, these are the integrations with Post Affiliate Pro avaliable.<br />
+    After enabling each, a separate section will appear in the submenu.
+</div>
+<div class="wrap">  
+        {form.head}
+        {settings}
+        <div class="integrationsTile">
+            {img-cf7}
+            <div class="integrationsTitle">Contact form 7</div>
+            {contact7-signup-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-edd}
+            <div class="integrationsTitle">Easy Digital Downloads</div>
+            {edd-commission-enabled}
+        </div>
+
+        <div class="integrationsTile">
+            {img-lifterlms}
+            <div class="integrationsTitle">LifterLMS</div>
+            {lifterlms-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-marketpress}
+            <div class="integrationsTitle">Marketpress</div>
+            {marketpress-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-memberpress}
+            <div class="integrationsTitle">MemberPress</div>
+            {memberpress-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-ms2pro}
+            <div class="integrationsTitle">Membership 2 Pro</div>
+            {membership2-commission-enabled}
+        </div>
+
+        <div class="integrationsTile">
+            {img-paypal}
+            <div class="integrationsTitle">PayPal Buy Now Button</div>
+            {wpecpp-commission-enabled}
+        </div>
+
+        <div class="integrationsTile">
+            {img-pmpro}
+            <div class="integrationsTitle">Post Membership Pro</div>
+            {pmpro-commission-enabled}
+        </div>
+
+        <div class="integrationsTile">
+            {img-rcppap}
+            <div class="integrationsTitle">Restrict Content Pro</div>
+            {rcppap-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-s2member}
+            <div class="integrationsTitle">s2Member</div>
+            {s2member-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-spp}
+            <div class="integrationsTitle">Simple Pay Pro</div>
+            {simplepaypro-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-stripepay}
+            <div class="integrationsTitle">Stripe Payments</div>
+            {stripepay-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-wlm}
+            <div class="integrationsTitle">WishList Member</div>
+            {wlm-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-woo}
+            <div class="integrationsTitle">WooCommerce</div>
+            {woocomm-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-wpec}
+            <div class="integrationsTitle">WP EasyCart</div>
+            {wpec-commission-enabled}
+        </div>
+        
+        <div class="integrationsTile">
+            {img-wppf}
+            <div class="integrationsTitle">WPPayForms</div>
+            {wppf-commission-enabled}
+        </div>
+
+    	<div style="clear: both;" class="submit">
+    		{submit}
+    	</div>
+    	{form.tail}
+</div>
+<!-- END: main -->

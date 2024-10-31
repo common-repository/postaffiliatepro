@@ -1,0 +1,44 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <img class="integrationsTitleImage" src="../wp-content/plugins/postaffiliatepro/resources/img/edd.png" alt="Easy Digital Downloads logo" />
+    <h2>Easy Digital Downloads integration configuration</h2>
+    Configure what should be tracked from Easy Digital Downloads plugin.
+        {form.head}
+        {settings}
+        <table class="form-table">
+          <tr valign="top">
+              <td scope="row" class="heading">Per product tracking</td>
+              <td>{edd-per-product}</td>
+              <td class="greyNote">when selected, a commissions will be created for each product of customer's order</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Track signup fee</td>
+              <td>{edd-track-fee}</td>
+              <td class="greyNote">when selected, a commissions will be created also for product's signup fee if there is any</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Product info</td>
+              <td>{edd-product-id}</td>
+              <td class="greyNote">choose which value will be used for product tracking (note your products should only have one category at a time if you want to track product category)</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Data 1</td>
+              <td>{edd-data1}</td>
+              <td class="greyNote">if nothing is entered here, customer email will be used</td>
+          </tr>
+          <tr valign="top">
+              <td scope="row" class="heading">Force campaign</td>
+              <td>{edd-campaign}</td>
+              <td class="greyNote">you can specify a campaign which will be used for all orders instead of automatic campaign recognition (by cookie, product ID, ...)</td>
+          </tr>
+          <!-- tr>
+              <td colspan="3" class="formBottomNote"></td>
+          </tr -->
+        </table>
+
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->

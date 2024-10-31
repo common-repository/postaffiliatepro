@@ -1,0 +1,24 @@
+<!-- BEGIN: main -->
+<div class="wrap">
+    <h2>Click tracking options</h2>
+    These options will apply everytime a WordPress page is shown to a visitor
+        {form.head}
+        {settings}
+        <table class="form-table">
+            <tr valign="top">
+                <td scope="row" valign="middle" style="width: 200px;font-weight:bold">Enable click tracking</td>
+                <td>{pap-click-tracking-enabled}</td>
+                <td class="greyNote">Use click tracking code (when checked, Post Affiliate Pro tracking code will be inserted to every WordPress page)</td>
+            </tr>
+            <tr valign="top">
+                <td scope="row" valign="middle" style="width: 200px;font-weight:bold">Force campaign</td>
+                <td>{pap-click-tracking-capaign}</td>
+                <td class="greyNote">Choose a campaign which will be used for all clicks to this wordPress site</td>
+            </tr>
+        </table>
+        <p class="submit">
+            {submit}
+        </p>
+        {form.tail}
+</div>
+<!-- END: main -->
